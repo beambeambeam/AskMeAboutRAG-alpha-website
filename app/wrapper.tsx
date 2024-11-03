@@ -4,6 +4,7 @@ import { useCookies } from "react-cookie"
 
 import { useToast } from "@/hooks/use-toast"
 import { Toaster } from "@/components/ui/toaster"
+import { ThemeProvider } from "@/components/theme-provider"
 
 export default function Wrapper({
   children,
@@ -22,9 +23,14 @@ export default function Wrapper({
   }
 
   return (
-    <>
+    <ThemeProvider
+      attribute="class"
+      defaultTheme="system"
+      enableSystem
+      disableTransitionOnChange
+    >
       {children}
       <Toaster />
-    </>
+    </ThemeProvider>
   )
 }
