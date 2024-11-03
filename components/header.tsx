@@ -2,7 +2,7 @@ import Profile from "@/components/profile"
 
 const Header = () => {
   return (
-    <header className="flex flex-col gap-5 text-black dark:text-white">
+    <header className="flex flex-col gap-5 text-foreground">
       <div className="flex flex-row items-center gap-5">
         <Profile type="BOT" className="size-10" />
         <h1 className="font-bold text-xl">AskMeAboutRAG</h1>
