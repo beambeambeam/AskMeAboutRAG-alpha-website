@@ -8,6 +8,7 @@ import { Button } from "./ui/button"
 
 const ModeToggle = () => {
   const { theme, setTheme } = useTheme()
+
   return (
     <Button
       variant="secondary"
